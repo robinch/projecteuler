@@ -26,11 +26,6 @@ func findLargestNdigitPal(n int) int {
 	maxRes := 0
 
 	step := 1
-	// Uses the fact that even palidromes
-	// are divisible by 11
-	if n%2 == 0 {
-		step = 11
-	}
 
 	min := 1
 	for i := 0; i < n-1; i++ {
